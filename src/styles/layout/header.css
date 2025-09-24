@@ -1,0 +1,45 @@
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   /* ------ */
+    
+}
+.cabecalho-logo{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 700px;
+}
+.cabecalho-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cabecalho-navegacao{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    
+}
+.cabecalho-nav ul:only-child{
+    
+    
+   /*  border: 1px solid red;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cabecalho-nav a{
+    color: white;
+    list-style: none;
+}
+.cabecalho-nav a:hover{
+    color: red;
+}

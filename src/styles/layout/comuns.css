@@ -1,0 +1,56 @@
+/*
+  1. A regra do box-sizing é uma das mais importantes.
+     Ela muda o cálculo do tamanho dos elementos para incluir
+     a borda e o preenchimento (padding) no valor total da largura e altura.
+     Isso torna a criação de layouts muito mais intuitiva.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Removemos todas as margens e preenchimentos padrão que os navegadores
+     aplicam a muitos elementos (como body, h1, p, ul).
+     Isso garante que qualquer espaçamento seja definido por você.
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  3. Definimos uma base para a tipografia e as cores do projeto no body.
+     Esses estilos serão herdados pela maioria dos outros elementos.
+*/
+body {
+  font-family: system-ui, -apple-system, sans-serif; /* Usa a fonte padrão e moderna do sistema do usuário */
+  line-height: 1.5; /* Um espaçamento entre linhas confortável para leitura */
+  -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte em alguns navegadores */
+  color: white;
+  background-color: black;
+}
+
+/*
+  4. Garantimos que as imagens nunca ultrapassem o tamanho do seu contêiner,
+     tornando-as responsivas por padrão.
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  5. Removemos estilos padrão de listas, que raramente são desejados.
+*/
+ul, ol {
+  list-style: none;
+}
+
+/*
+  6. Facilitamos a estilização de links, fazendo com que herdem a cor
+     do texto do seu elemento pai e removendo o sublinhado.
+*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
